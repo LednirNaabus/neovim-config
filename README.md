@@ -1,5 +1,5 @@
 # Neovim config
-Gruvbox-themed neovim configuration.
+Gruvbox-themed and Lua-based neovim configuration.
 
 # To Do:
 - [ ] Install other language servers (Treesitter and LSP)
