@@ -1,6 +1,12 @@
 # Neovim config
 Gruvbox-themed neovim configuration.
 
+# Screenshots
+
+![screenshot](/screenshots/s1.png)
+![screenshot](/screenshots/s2.png)
+![screenshot](/screenshots/s3.png)
+
 # To Do:
 - [ ] Install other language servers (Treesitter and LSP)
 
