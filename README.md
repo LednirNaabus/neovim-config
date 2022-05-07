@@ -6,6 +6,5 @@ Gruvbox-themed neovim configuration.
 
 ### Neovim Plugins to try
 - [ ] `glepnir/lspsaga.nvim`
-- [ ] `fuzzy finder`
 - [x] `telescope`
 - [ ] `dim windows`
