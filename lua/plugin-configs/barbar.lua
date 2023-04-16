@@ -1,7 +1,7 @@
-vim.g.bufferline = {
+require('barbar').setup {
     animations = true,
     closable = true,
-    icons = true,
-    icon_separator_active = '',
-    icon_separator_inactive = '',
+    icons = { filetype = { enabled = true, }, },
+    separator = {left = '▎', right = ''},
+    inactive = {button = 'x'},
 }
