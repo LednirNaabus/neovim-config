@@ -4,9 +4,10 @@ return require'packer'.startup(function()
     use 'kyazdani42/nvim-web-devicons' -- devicons for aesthetic
     use 'nvim-lualine/lualine.nvim' -- statusline for neovim written in lua
     use 'kyazdani42/nvim-tree.lua' -- file explorer
-    use 'romgrk/barbar.nvim' -- barbar: tablike feature
+    use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'} -- barbar: tablike feature
     -- use 'sunjon/shade.nvim' -- dims inactive windows
     use 'jiangmiao/auto-pairs' -- auto pairs for '(' '[' '{'
+    use 'preservim/nerdcommenter' -- auto comment lines
 
     -- -> TREESITTER PLUGINS
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } -- neovim treesitter
