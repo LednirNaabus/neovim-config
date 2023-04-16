@@ -4,8 +4,24 @@ vim.g.mapleader = ' ' -- space
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
+-- general mappings
+-- navigation
+map('n', '<C-h>', '<C-w>h', opts)
+map('n', '<C-l>', '<C-w>l', opts)
+map('n', '<C-j>', '<C-w>j', opts)
+map('n', '<C-k>', '<C-w>k', opts)
+
+-- exit insert mode
+map('i', 'jk', '<ESC>', opts)
+
 -- nvim-tree mappings
 map('n', '<leader>t', ':NvimTreeToggle<CR>', opts)
+
+-- nerdcommenter mappings
+vim.cmd([[
+    nnoremap <leader><leader>c :call nerdcommenter#Comment(0, "toggle")<CR>
+    vnoremap <leader><leader>c :call nerdcommenter#Comment(0, "toggle")<CR>
+]])
 
 -- barbar mappings
 local opts = { noremap = true, silent = true }
