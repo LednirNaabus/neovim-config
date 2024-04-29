@@ -1,9 +1,18 @@
 return require'packer'.startup(function()
+    use 'christoomey/vim-tmux-navigator' -- seamless navigation between tmux panes and vim splits
+    --use { 'christoomey/vim-tmux-navigator', cmd ={
+        --"TmuxNavigateLeft",
+        --"TmuxNavigateDown",
+        --"TmuxNavigateUp",
+        --"TmuxNavigateRight",
+        --"TmuxNavigatePrevious",
+    --} }
     use 'wbthomason/packer.nvim' -- plugin manager (packer)
     use 'ellisonleao/gruvbox.nvim' -- sweet grubvox colorscheme
     use 'kyazdani42/nvim-web-devicons' -- devicons for aesthetic
     use 'nvim-lualine/lualine.nvim' -- statusline for neovim written in lua
     use 'kyazdani42/nvim-tree.lua' -- file explorer
+    -- use 'romgrk/barbar.nvim' -- barbar: tablike feature
     use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'} -- barbar: tablike feature
     -- use 'sunjon/shade.nvim' -- dims inactive windows
     use 'jiangmiao/auto-pairs' -- auto pairs for '(' '[' '{'

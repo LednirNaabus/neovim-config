@@ -16,6 +16,7 @@ set.smartcase = true
 set.splitbelow = true
 set.splitright = true
 set.wrap = false
+--set.encoding = 'UTF-8'
 set.fileencoding = 'utf-8'
 set.termguicolors = true
 

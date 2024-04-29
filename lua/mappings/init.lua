@@ -17,7 +17,7 @@ map('i', 'jk', '<ESC>', opts)
 -- nvim-tree mappings
 map('n', '<leader>t', ':NvimTreeToggle<CR>', opts)
 
--- nerdcommenter mappings
+-- nerdocommenter mappings
 vim.cmd([[
     nnoremap <leader><leader>c :call nerdcommenter#Comment(0, "toggle")<CR>
     vnoremap <leader><leader>c :call nerdcommenter#Comment(0, "toggle")<CR>
