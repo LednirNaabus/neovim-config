@@ -27,3 +27,4 @@ set.smartindent = true
 set.autoindent = true
 
 set.showmode = false
+set.swapfile = false
