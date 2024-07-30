@@ -17,6 +17,11 @@ map('i', 'jk', '<ESC>', opts)
 -- nvim-tree mappings
 map('n', '<leader>t', ':NvimTreeToggle<CR>', opts)
 
+-- replace currently selected text with default register without yanking it
+vim.cmd([[
+    xnoremap <leader>p "_dP
+]])
+
 -- nerdocommenter mappings
 vim.cmd([[
     nnoremap <leader><leader>c :call nerdcommenter#Comment(0, "toggle")<CR>
