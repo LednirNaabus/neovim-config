@@ -48,3 +48,13 @@ map('n', '<A-9>', ':BufferGoto 9<CR>', opts)
 map('n', '<A-0>', ':BufferLast<CR>', opts)
 -- Close buffer
 map('n', '<A-w>', ':BufferClose<CR>', opts)
+
+-- Telescope mappings
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<leader>ff', builtin.find_files, {}) -- find files
+vim.keymap.set('n', '<leader>fg', builtin.git_files, {}) -- fuzzy finding; git file and all file search
+-- fuzzy search
+-- Basically lets you find everywhere that we say any string/word you type using grep
+vim.keymap.set('n', '<leader>ps', function()
+    builtin.grep_string({ search = vim.fn.input("Grep > ") })
+end)

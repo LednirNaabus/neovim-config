@@ -14,7 +14,24 @@ return require'packer'.startup(function()
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'} -- neovim treesitter
     use 'nvim-treesitter/nvim-treesitter-refactor' -- refactor modules for nvim treesitter
     
-    -- -> LSP PLUGINS
+    -- -> LSP PLUGINS AND FUNCTIONALITY
+    use {
+        'VonHeikemen/lsp-zero.nvim',
+        branch = 'v3.x',
+        requires = {
+            --- Uncomment the two plugins below if you want to manage the language servers from neovim
+             {'williamboman/mason.nvim'},
+             {'williamboman/mason-lspconfig.nvim'},
+
+             -- some additional requirements
+            {'neovim/nvim-lspconfig'},
+            {'hrsh7th/nvim-cmp'}, -- autocompletion
+            {'hrsh7th/cmp-nvim-lsp'}, -- LSP source for nvim-cmp
+            {'L3MON4D3/LuaSnip'}, -- snippets plugin
+            {'onsails/lspkind-nvim'}, -- pictograms for lsp
+        }
+    }
 
     -- -> TELESCOPE PLUGINS
+    use {'nvim-telescope/telescope.nvim', requires = 'nvim-lua/plenary.nvim'}
 end)
