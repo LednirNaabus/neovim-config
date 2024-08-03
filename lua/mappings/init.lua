@@ -35,3 +35,18 @@ vim.keymap.set('n', '<leader>fg', builtin.git_files, {}) -- fuzzy finding; git f
 vim.keymap.set('n', '<C-p>', function()
     builtin.grep_string({ search = vim.fn.input("Grep > ") })
 end)
+
+-- barbar mappings
+-- move to previous/next
+map('n', '<A-,>', ':BufferPrevious<CR>', opts)
+map('n', '<A-.>', ':BufferNext<CR>', opts)
+-- Re-order to previous/next
+map('n', '<A-<>', ':BufferMovePrevious<CR>', opts)
+map('n', '<A->>', ' :BufferMoveNext<CR>', opts)
+-- Close buffer
+map('n', '<A-w>', ':BufferClose<CR>', opts)
+-- Goto buffer in position...
+map('n', '<A-1>', ':BufferGoto 1<CR>', opts)
+map('n', '<A-2>', ':BufferGoto 2<CR>', opts)
+map('n', '<A-3>', ':BufferGoto 3<CR>', opts)
+map('n', '<A-4>', ':BufferGoto 4<CR>', opts)
