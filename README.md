@@ -1,9 +1,7 @@
 # Neovim config
-Gruvbox-themed and Lua-based neovim configuration.
 
-### This branch is a reset
-
-- New plugins, configs, and keymappings.
+- My simple gruvbox-themed and lua based neovim configuration.
+- Plugins managed using [packer](https://github.com/wbthomason/packer.nvim).
 
 # Screenshots
 
@@ -11,8 +9,16 @@ Gruvbox-themed and Lua-based neovim configuration.
 ![screenshot](/screenshots/s2.png)
 ![screenshot](/screenshots/s3.png)
 
+### Navigation
+- `init.lua`: Main configuration file.
+- `settings/init.lua`: General vim settings.
+- `plugins/init.lua`: Plugins managed by [packer](https://github.com/wbthomason/packer.nvim).
+- `plugin-configs/`: Directory where you can create dedicated config files for your plugins.
+- `mappings/`: Key maps.
+- `color-schemes/`: Where you store the theme for your neovim.
+
 ### Neovim Plugins to try
-- [ ] `telescope`
+- [x] `telescope`
 - [ ] `nvim-cmp`
 - [ ] `lsp-config`
 - [ ] `mason-nvim`
