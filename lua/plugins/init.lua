@@ -5,4 +5,7 @@ return require('packer').startup(function(use)
     --> TREESITTER PLUGINS
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
     use 'nvim-treesitter/nvim-treesitter-refactor' -- refactor modules for nvim treesitter
+
+    --> TELESCOPE PLUGINS
+    use {'nvim-telescope/telescope.nvim', requires = 'nvim-lua/plenary.nvim'}
 end)
