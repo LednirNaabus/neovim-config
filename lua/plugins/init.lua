@@ -4,6 +4,7 @@ return require('packer').startup(function(use)
     use 'ellisonleao/gruvbox.nvim' -- sweet gruvbox colorscheme
     use 'nvim-lualine/lualine.nvim' -- statusline for neovim written in lua
     use 'kyazdani42/nvim-tree.lua' -- file explorer for neovim
+    use 'christoomey/vim-tmux-navigator' -- seamless navigation between tmux panes and vim splits
 
     --> Treesitter plugins
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
