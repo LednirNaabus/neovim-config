@@ -3,6 +3,7 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim' -- Neovim plugin manager
     use 'ellisonleao/gruvbox.nvim' -- sweet gruvbox colorscheme
     use 'nvim-lualine/lualine.nvim' -- statusline for neovim written in lua
+    use 'kyazdani42/nvim-tree.lua' -- file explorer for neovim
 
     --> Treesitter plugins
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}

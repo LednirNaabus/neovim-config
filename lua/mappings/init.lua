@@ -5,6 +5,7 @@ local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
 -- general mappings
+
 -- navigation
 map('n', '<C-h>', '<C-w>h', opts)
 map('n', '<C-l>', '<C-w>l', opts)
@@ -13,6 +14,9 @@ map('n', '<C-k>', '<C-w>k', opts)
 
 -- exit insert mode
 map('i', 'jk', '<ESC>', opts)
+
+-- nvim-tree mappings
+map('n', '<leader>t', ':NvimTreeToggle<CR>', opts)
 
 -- replace currently selected text with default register without yanking it
 vim.cmd([[
