@@ -23,6 +23,9 @@ vim.cmd([[
     xnoremap <leader>p "_dP
 ]])
 
+-- clear highlights on search
+map('n', '<Esc>', '<cmd>nohlsearch<CR>', opts)
+
 -- nvim-telescope mappings
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {}) -- find files
