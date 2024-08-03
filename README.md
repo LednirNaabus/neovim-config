@@ -11,9 +11,8 @@ Gruvbox-themed and Lua-based neovim configuration.
 ![screenshot](/screenshots/s2.png)
 ![screenshot](/screenshots/s3.png)
 
-# To Do:
-- ~~[ ] Install other language servers (Treesitter and LSP)~~
-
 ### Neovim Plugins to try
-- [ ] `glepnir/lspsaga.nvim`
-- [x] `telescope`
+- [ ] `telescope`
+- [ ] `nvim-cmp`
+- [ ] `lsp-config`
+- [ ] `mason-nvim`
