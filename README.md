@@ -3,6 +3,10 @@
 - My simple gruvbox-themed and lua based neovim configuration.
 - Plugins managed using [packer](https://github.com/wbthomason/packer.nvim).
 
+# Installation
+
+- Clone git repository into your `~/.config/nvim` directory.
+
 # Screenshots
 
 ![screenshot](/screenshots/s1.png)
@@ -16,9 +20,3 @@
 - `plugin-configs/`: Directory where you can create dedicated config files for your plugins.
 - `mappings/`: Key maps.
 - `color-schemes/`: Where you store the theme for your neovim.
-
-### Neovim Plugins to try
-- [x] `telescope`
-- [x] `nvim-cmp`
-- [x] `lsp-config`
-- [x] `mason-nvim`
