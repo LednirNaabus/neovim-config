@@ -10,6 +10,19 @@ return require('packer').startup(function(use)
     use 'jiangmiao/auto-pairs' -- auto pairs for brackets
     use 'preservim/nerdcommenter' -- auto comment lines
 
+    --> LSP plugins
+    use {
+        'williamboman/mason.nvim',
+        requires = {
+            'williamboman/mason-lspconfig.nvim',
+            'neovim/nvim-lspconfig',
+            'hrsh7th/nvim-cmp',
+            'hrsh7th/cmp-nvim-lsp',
+            'L3MON4D3/LuaSnip',
+            'onsails/lspkind-nvim',
+        }
+    }
+
     --> Treesitter plugins
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
     use 'nvim-treesitter/nvim-treesitter-refactor' -- refactor modules for nvim treesitter

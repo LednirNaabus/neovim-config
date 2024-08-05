@@ -12,8 +12,9 @@ map('n', '<C-l>', '<C-w>l', opts)
 map('n', '<C-j>', '<C-w>j', opts)
 map('n', '<C-k>', '<C-w>k', opts)
 
--- exit insert mode
+-- ways exit insert mode
 map('i', 'jk', '<ESC>', opts)
+vim.keymap.set({'i', 'n', 'v'}, '<C-c>', '<Esc>', {desc = 'Make Ctrl+c behave exactly like escape.'})
 
 -- nvim-tree mappings
 map('n', '<leader>t', ':NvimTreeToggle<CR>', opts)
@@ -32,9 +33,15 @@ vim.keymap.set('n', '<leader>ff', builtin.find_files, {}) -- find files
 vim.keymap.set('n', '<leader>fg', builtin.git_files, {}) -- fuzzy finding; git file and all file search
 -- fuzzy search
 -- Basically lets you find everywhere that we say any string/word you type using grep
-vim.keymap.set('n', '<C-p>', function()
+vim.keymap.set('n', '<C-p>s', function()
     builtin.grep_string({ search = vim.fn.input("Grep > ") })
 end)
+
+-- nerdcommenter mappings here
+vim.cmd([[
+    nnoremap <leader><leader>c :call nerdcommenter#Comment(0, "toggle")<CR>
+    vnoremap <leader><leader>c :call nerdcommenter#Comment(0, "toggle")<CR>
+]])
 
 -- barbar mappings
 -- move to previous/next

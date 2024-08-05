@@ -4,6 +4,8 @@ require('plugins')
 require('settings')
 
 require('plugin-configs.barbar')
+require('plugin-configs.lsp-config')
 require('plugin-configs.lualine-config')
+require('plugin-configs.nvim-cmp')
 require('plugin-configs.nvim-tree')
 require('plugin-configs.treesitter-config')
