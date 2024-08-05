@@ -19,6 +19,6 @@
 
 ### Neovim Plugins to try
 - [x] `telescope`
-- [ ] `nvim-cmp`
-- [ ] `lsp-config`
-- [ ] `mason-nvim`
+- [x] `nvim-cmp`
+- [x] `lsp-config`
+- [x] `mason-nvim`
